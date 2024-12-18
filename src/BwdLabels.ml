@@ -18,6 +18,8 @@ let nth_opt = BwdNoLabels.nth_opt
 
 let[@inline] init ~len ~f = BwdNoLabels.init len f
 
+let append = BwdNoLabels.append
+
 let append_list = BwdNoLabels.append_list
 
 let prepend_list = BwdNoLabels.prepend_list

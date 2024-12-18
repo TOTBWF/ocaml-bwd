@@ -67,6 +67,11 @@ let init len f =
     in
     go 0 (len - 1)
 
+let[@tail_mod_cons] rec append xs ys =
+  match ys with
+  | Emp -> xs
+  | Snoc (ys, y) -> Snoc(append xs ys, y)
+
 let append_list xs ys =
   let rec go =
     function

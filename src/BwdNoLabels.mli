@@ -51,6 +51,8 @@ val nth_opt : 'a t -> int -> 'a option
 
 val init : int -> (int -> 'a) -> 'a t
 
+val append : 'a t -> 'a t -> 'a t
+
 val append_list : 'a t -> 'a list -> 'a t
 
 val prepend_list : 'a t -> 'a list -> 'a list
